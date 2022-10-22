@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                sh encoding: 'UTF-8', returnStdout: true, script: 'python3 main.py'
+                sh encoding: 'UTF-8', returnStdout: true, script: 'bash main.sh'
             }
         }
         stage('Test') {
