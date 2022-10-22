@@ -2,12 +2,13 @@ pipeline {
     agent any
 
     
-    stage('Setup Parameters') {
-        steps {
-            properties([parameters([string(defaultValue: 'DEV', description: 'Environment Type', name: 'ENVIRONMENT', trim: true)])])
-        }
-    }    
+  
     stages {
+        stage('Setup Parameters') {
+            steps {
+                properties([parameters([string(defaultValue: 'DEV', description: 'Environment Type', name: 'ENVIRONMENT', trim: true)])])
+            }
+        }  
         stage('Build') {
             steps {
                 echo 'Building'
