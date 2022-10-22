@@ -1,2 +1,3 @@
 #!/bin/bash
-echo $(date) > log.txt
+echo $1 > log.txt
+echo $(date) >> log.txt
