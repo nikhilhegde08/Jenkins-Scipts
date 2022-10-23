@@ -1,10 +1,15 @@
-// groovy script to set params
+// external groovy script to specify params
 
-def getOptions(){
-  def options = [
-  string(name: 'ENV', description: 'Specify Environment', defaultValue: 'null')
-  ]
-  
-  return options
+def buildOptions() {
+    def options = [
+      parameters(
+        [
+          string(name: 'ENV', defaultValue: 'test', description: 'Environment Value')
+        ]
+      )
+    ]
+
+
+    return options
 }
 return this
