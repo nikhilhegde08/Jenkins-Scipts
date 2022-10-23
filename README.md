@@ -1,5 +1,9 @@
 # Jenkins-Scipts
-## Steps
+
+### Problem Statement
+Create a Groovy Script to define Jenkins Pipeline parameters. Access the Parameters from the Groovy Script and Write another Groovy Script which reads and displays the value of the Parameter in the Logs.
+
+### Steps
 1. Login to Jenkins Console.
 2. Create a New Item >> Enter a Friendly Name>> Select Pipeline.
 3. Check Option This build is parameterized.
