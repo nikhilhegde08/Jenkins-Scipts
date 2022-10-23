@@ -1,8 +1,8 @@
 // grovy entry point file
-class main{
-def testMethod(final Map map){
+
+def testMethod(Map map){
   println '${map}'
   println '${map.ENV}'
 }
-}
+
 
